@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D233F9A21C78E3E0078B74C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D233F9921C78E3E0078B74C /* GoogleService-Info.plist */; };
+		0D233F9B21C78E3E0078B74C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D233F9921C78E3E0078B74C /* GoogleService-Info.plist */; };
+		0D233F9C21C78E3E0078B74C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D233F9921C78E3E0078B74C /* GoogleService-Info.plist */; };
 		28936C8FDEF8E3CB711A0164 /* Pods_MyTubeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E888123C03AE0401E3F77C22 /* Pods_MyTubeUITests.framework */; };
 		5ABBE2952A2FFC60AE087D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBE23A717AF2752512C5D1 /* Assets.xcassets */; };
 		5ABBE49FDF24C18AF1893BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ABBEF7AA138726695D79A14 /* Main.storyboard */; };
@@ -38,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0961CDE969A709E6F68F9FF4 /* Pods-MyTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTube/Pods-MyTube.release.xcconfig"; sourceTree = "<group>"; };
+		0D233F9921C78E3E0078B74C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B7DE4C1448D30CB6421FDE3 /* Pods_MyTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3689292032999DB83CDA02 /* Pods-MyTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTube/Pods-MyTube.debug.xcconfig"; sourceTree = "<group>"; };
 		582A8CDF78477763A8CCE10E /* Pods-MyTubeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTubeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTubeUITests/Pods-MyTubeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				5ABBE8ABB5F69CA40C2C6FE3 /* Info.plist */,
+				0D233F9921C78E3E0078B74C /* GoogleService-Info.plist */,
 				5ABBE23A717AF2752512C5D1 /* Assets.xcassets */,
 				5ABBE77B9C8F841664E56642 /* LaunchScreen.storyboard */,
 				5ABBE9FBD532ACD95154E3EE /* AppDelegate.swift */,
@@ -195,6 +200,8 @@
 				5ABBE5E789CF54EA8C19100D /* Sources */,
 				5ABBE63A4A7052D06165CF54 /* Frameworks */,
 				5ABBEA094F38621504ED6C48 /* Resources */,
+				67327C9421E5863BC709B1A0 /* [CP] Embed Pods Frameworks */,
+				26B4A2D3DEC0F28314AD168C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ABBE2952A2FFC60AE087D4B /* Assets.xcassets in Resources */,
+				0D233F9A21C78E3E0078B74C /* GoogleService-Info.plist in Resources */,
 				5ABBE9D9B2F3C71522DE75AA /* LaunchScreen.storyboard in Resources */,
 				5ABBE49FDF24C18AF1893BA1 /* Main.storyboard in Resources */,
 			);
@@ -271,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D233F9C21C78E3E0078B74C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +287,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D233F9B21C78E3E0078B74C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		26B4A2D3DEC0F28314AD168C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyTube/Pods-MyTube-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTube/Pods-MyTube-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67327C9421E5863BC709B1A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyTube/Pods-MyTube-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTube/Pods-MyTube-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8F6DE5DD64ACF9DF2D9A7A03 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
