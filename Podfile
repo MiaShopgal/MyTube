@@ -6,8 +6,8 @@ target 'MyTube' do
   use_frameworks!
 
   # Pods for MyTube
-  pod 'GoogleAPIClientForREST/YouTube', '~> 1.3.7'
-  pod 'Google/SignIn', '~> 3.1.0'
+  pod 'GoogleAPIClientForREST/YouTube', '~> 1.2.1'
+  pod 'Google/SignIn', '~> 3.0.3'
   target 'MyTubeTests' do
     inherit! :search_paths
     # Pods for testing

@@ -309,7 +309,7 @@ NSString * const kGTLRYouTubeVideoTypeMovie   = @"movie";
 
 @implementation GTLRYouTubeQuery_ChannelBannersInsert
 
-@dynamic channelId, onBehalfOfContentOwner;
+@dynamic onBehalfOfContentOwner;
 
 + (instancetype)queryWithObject:(GTLRYouTube_ChannelBannerResource *)object
                uploadParameters:(GTLRUploadParameters *)uploadParameters {
@@ -671,6 +671,24 @@ NSString * const kGTLRYouTubeVideoTypeMovie   = @"movie";
   query.part = part;
   query.expectedObjectClass = [GTLRYouTube_CommentThread class];
   query.loggingName = @"youtube.commentThreads.update";
+  return query;
+}
+
+@end
+
+@implementation GTLRYouTubeQuery_FanFundingEventsList
+
+@dynamic hl, maxResults, pageToken, part;
+
++ (instancetype)queryWithPart:(NSString *)part {
+  NSString *pathURITemplate = @"fanFundingEvents";
+  GTLRYouTubeQuery_FanFundingEventsList *query =
+    [[self alloc] initWithPathURITemplate:pathURITemplate
+                               HTTPMethod:nil
+                       pathParameterNames:nil];
+  query.part = part;
+  query.expectedObjectClass = [GTLRYouTube_FanFundingEventListResponse class];
+  query.loggingName = @"youtube.fanFundingEvents.list";
   return query;
 }
 
